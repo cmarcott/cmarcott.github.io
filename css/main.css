@@ -1,9 +1,15 @@
+@font-face {
+    font-family: 'Anurati';
+    src: url("../resources/Anurati-Regular.otf") format("opentype");
+}
+
 h1.cursive {
     font-family: 'Grand Hotel',cursive;
     font-size: 82px;
 }
 
-@font-face {
+h1.Anurati {
     font-family: 'Anurati';
-    src: url("resources/Anurati-Regular.otf") format("opentype");
+    font-size: 82px;
 }
+
