@@ -13,3 +13,50 @@ h1.Anurati {
     font-size: 82px;
 }
 
+p.translucent {
+  /*Need to find translucent*/
+  padding: 16px 16px 16px 16px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* The navigation bar */
+.navbar {
+    background-color: #36383a;
+    top: 0; /* Position the navbar at the top of the page */
+}
+
+.navbarchoice {
+    padding: 10px;
+    float: left;
+    color: #07592d;
+}
+
+.navbarchoice:hover {
+    color: #9b9da3;
+}
+
+.header {
+  z-index:-1;
+  position:relative;
+}
+
+.main {
+    background-position: center center;
+    background-size: cover;
+    height: auto;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    width: auto;
+}
+
+.jumbotron {
+    background-color: transparent;
+    text-align: center;
+}
