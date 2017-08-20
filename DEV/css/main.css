@@ -38,7 +38,8 @@ li {
     text-align: center;
     padding: 10px 20px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 18px;
+    font-family: 'Electrolize', sans-serif;
 }
 
 .navbarchoice:hover {
@@ -49,8 +50,11 @@ li {
 .header {
   width: 90%;
   position:relative;
-  background-image: url('../images/nature.jpg');
+  background-image: url('../images/nature2.jpg');
+  background-size: contain;
   margin: auto;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #fff;
 }
 
 .main {
@@ -63,14 +67,26 @@ li {
 }
 
 .jumbotron {
+    height: 90%;
     position: relative;
     background-color: transparent;
     text-align: center;
-    height: 90%;
+    border: 5px solid white;
 }
 
 .defaultbackground {
     height: 100%;
     background-color: #050505;
     z-index:-1;
+}
+
+.borderbox {
+    width: 200px;
+    height: 200px;
+    float: left;
+    border: 5px solid white;
+}
+
+.spacer{
+    height: 30%;
 }
