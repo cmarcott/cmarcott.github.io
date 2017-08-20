@@ -10,12 +10,7 @@ h1.cursive {
 
 h1.Anurati {
     font-family: 'Anurati';
-    font-size: 82px;
-}
-
-p.translucent {
-  /*Need to find translucent*/
-  padding: 16px 16px 16px 16px;
+    font-size: 62px;
 }
 
 ul {
@@ -24,27 +19,38 @@ ul {
     padding: 0;
 }
 
+li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
 /* The navigation bar */
-.navbar {
-    background-color: #36383a;
-    top: 0; /* Position the navbar at the top of the page */
+#navbartop {
+    background-color: #050505;
+    overflow: hidden;
+    text-align: center;
 }
 
 .navbarchoice {
-    padding: 10px;
     float: left;
-    color: #07592d;
-    font-family: 'Saira Semi Condensed', sans-serif;
-    font-size: 20;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 17px;
 }
 
 .navbarchoice:hover {
-    color: #9b9da3;
+    background-color: #ddd;
+    color: black;
 }
 
 .header {
-  z-index:-1;
+  width: 90%;
   position:relative;
+  background-image: url('../images/nature.jpg');
+  margin: auto;
 }
 
 .main {
@@ -52,13 +58,19 @@ ul {
     background-size: cover;
     height: auto;
     left: 0;
-    min-height: 100%;
-    min-width: 100%;
     position: absolute;
     width: auto;
 }
 
 .jumbotron {
+    position: relative;
     background-color: transparent;
     text-align: center;
+    height: 90%;
+}
+
+.defaultbackground {
+    height: 100%;
+    background-color: #050505;
+    z-index:-1;
 }
