@@ -1,3 +1,8 @@
+:root {
+    --transition-and-dropdown-color: #0f0f0e;
+    --main-border-color:#14230e;
+}
+
 @font-face {
     font-family: 'Anurati';
     src: url("../resources/Anurati-Regular.otf") format("opentype");
