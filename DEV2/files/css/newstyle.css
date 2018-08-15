@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'Anurati';
+    src: url("../resources/Anurati-Regular.otf") format("opentype");
+}
+
+#main-title-screen {
+    /*font-family: 'Anurati';*/
+    font-size: 62px;
+    color: #ffffff;
+}
+
 .centered-paragraph {
-  text-align: center
+    text-align: center;
 }

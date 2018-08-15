@@ -508,7 +508,7 @@ header {
     -o-transition: none;
     -ms-transition: none;
 	}
-	.non-overlay {	position: relative; top: inherit; left: inherit; background: #0d0d0d; width: 100%; }
+	.non-overlay {	position: relative; top: inherit; left: inherit; background: #14230e; width: 100%; }
 	.sticky-header { position: fixed; top: -100px !important; left: 0; background: #ffffff; margin-top: 100px; 
 	transition: margin 600ms ease;
 	-webkit-transition: margin 600ms ease;
@@ -2426,7 +2426,7 @@ a.sr-button2:hover { border-color: #ffffff; color: #0d0d0d; }
 20. BORDERS
 ------------------------------------------------*/
 .bordered #bodyborder-top, .bordered #bodyborder-bottom, .bordered #bodyborder-left, .bordered #bodyborder-right {
-	background: #f0f0f0;
+	background: #14230e;
 	position: fixed;
 	z-index: 100002;
 	-webkit-transition: all 0.6s 0s ease;
