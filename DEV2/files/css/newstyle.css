@@ -33,3 +33,7 @@
 #main-sections {
     background-color: var(--general-page-background);
 }
+
+.page-text {
+    color: var(--standard-border-text-color);
+}
