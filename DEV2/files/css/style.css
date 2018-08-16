@@ -700,7 +700,7 @@ footer #backtotop {
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
-	color: #0d0d0d;
+	color: var(--standard-border-text-color);
 	width: 56px;
 	height: 20px;
 	line-height: 20px;
@@ -716,7 +716,7 @@ footer #backtotop:after {
 	left: 44%; margin-left: -0%;
 	width: 0%;
 	height: 1px;
-	background: #0d0d0d;
+	background: var(--standard-border-text-color);
 	transition: all 200ms ease;
 	-webkit-transition: all 200ms ease;
     -moz-transition: all 200ms ease;
