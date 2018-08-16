@@ -1,6 +1,6 @@
 :root {
     --transition-and-dropdown-color: #0f0f0e;
-    --general-page-background: #0f0f0e;
+    --general-page-background: #d3d3d3;
     --main-border-color: #14230e;
     --standard-border-text-color: #fdfdfd;
     --title-text-border-color: none;
@@ -23,5 +23,13 @@
 }
 
 .spacer-small {
+    background-color: var(--general-page-background);
+}
+
+.main-title {
+    background-color: var(--general-page-background);
+}
+
+#main-sections {
     background-color: var(--general-page-background);
 }
