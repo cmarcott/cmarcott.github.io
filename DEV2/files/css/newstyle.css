@@ -1,6 +1,9 @@
 :root {
     --transition-and-dropdown-color: #0f0f0e;
-    --main-border-color:#14230e;
+    --general-page-background: #0f0f0e;
+    --main-border-color: #14230e;
+    --standard-border-text-color: #fdfdfd;
+    --title-text-border-color: none;
 }
 
 @font-face {
@@ -10,10 +13,15 @@
 
 #main-title-screen {
     /*font-family: 'Anurati';*/
-    font-size: 62px;
-    color: #ffffff;
+    /*font-size: 62px;*/
+    color: #fdfdfd;
+    text-shadow: -1px 0 var(--title-text-border-color), 0 1px var(--title-text-border-color), 1px 0 var(--title-text-border-color), 0 -1px var(--title-text-border-color);
 }
 
 .centered-paragraph {
     text-align: center;
+}
+
+.spacer-small {
+    background-color: var(--general-page-background);
 }
