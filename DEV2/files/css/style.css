@@ -144,7 +144,7 @@ div h1:first-child, div h2:first-child, div h3:first-child, div h4:first-child, 
 
 .alttitle { font-family: 'Lato'; font-weight: 300; margin-top: 10px; }
 .alttitle b, .alttitle strong { font-weight: 400; }
-.title-minimal { text-transform: uppercase; letter-spacing: 0.15em; }
+.title-minimal { letter-spacing: 0.15em; }
 .title-ultraminimal { text-transform: uppercase; letter-spacing: 0.4em; }
 
 [data-bigletter] { position: relative; z-index: 1; }

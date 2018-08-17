@@ -18,6 +18,15 @@
     text-shadow: -1px 0 var(--title-text-border-color), 0 1px var(--title-text-border-color), 1px 0 var(--title-text-border-color), 0 -1px var(--title-text-border-color);
 }
 
+/* used for transparent background around text */
+.title-background {
+    text-align: center;
+}
+
+.title-background span {
+    background:rgba(0,0,0,0.3);
+}
+
 .centered-paragraph {
     text-align: center;
 }
