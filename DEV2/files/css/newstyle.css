@@ -4,6 +4,7 @@
     --main-border-color: #14230e;
     --standard-border-text-color: #fdfdfd;
     --title-text-border-color: #14230e;
+    --text-border-color: #0f0f0e;
 }
 
 @font-face {
@@ -16,6 +17,10 @@
     /*font-size: 62px;*/
     color: #fdfdfd;
     text-shadow: -1px 0 var(--title-text-border-color), 0 1px var(--title-text-border-color), 1px 0 var(--title-text-border-color), 0 -1px var(--title-text-border-color);
+}
+
+.title-bordered {
+    text-shadow: -1px 0 var(--text-border-color), 0 1px var(--text-border-color), 1px 0 var(--text-border-color), 0 -1px var(--text-border-color);
 }
 
 /* used for transparent background around text */
