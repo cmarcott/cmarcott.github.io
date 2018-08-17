@@ -275,7 +275,7 @@ jQuery(window).load(function($) {
 				S C R O L L   D O W N
 	------------------------------------------------*/
 	jQuery('#scrolldown').click(function(){
-		jQuery('html, body').animate({scrollTop: $("#myDiv").offset().top}, 1000, 'easeInOutQuart');
+		jQuery('html, body').animate({scrollTop: jQuery("#main-sections").offset().top}, 2000, 'easeInOutQuart');
 		return false;						   
 	});
 	
