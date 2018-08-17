@@ -264,13 +264,20 @@ jQuery(window).load(function($) {
 	
 	
 	/*---------------------------------------------- 
-				 B A C K   T O P   T O P
+				 B A C K   T O   T O P
 	------------------------------------------------*/
 	jQuery('#backtotop').click(function(){
 		jQuery('html, body').animate({scrollTop: 0}, 1000, 'easeInOutQuart');
 		return false;						   
 	});
-	
+
+	/*---------------------------------------------- 
+				S C R O L L   D O W N
+	------------------------------------------------*/
+	jQuery('#scrolldown').click(function(){
+		jQuery('html, body').animate({scrollTop: $("#myDiv").offset().top}, 1000, 'easeInOutQuart');
+		return false;						   
+	});
 	
 	
 	/*---------------------------------------------- 
