@@ -1,8 +1,8 @@
 :root {
     --transition-and-dropdown-color: #0f0f0e;
-    --general-page-background: #fdfdfd;
+    --general-page-background: #f7f7f7;
     --main-border-color: #14230e;
-    --standard-border-text-color: #fdfdfd;
+    --standard-border-text-color: #f7f7f7;
     --title-text-border-color: #14230e;
     --text-border-color: #0f0f0e;
 }
@@ -41,6 +41,10 @@
 }
 
 .main-title {
+    background-color: var(--general-page-background);
+}
+
+.section-inner {
     background-color: var(--general-page-background);
 }
 

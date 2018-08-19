@@ -2249,6 +2249,9 @@ a.sr-button2:hover { border-color: #ffffff; color: #0d0d0d; }
 .socialmedia-widget li.xing a:before { content: "\f168"; }
 .socialmedia-widget li.dropbox a:before { content: "\f16b"; }
 
+.socialmedia-widget li.gitlab a:before { content: "\f296"; }
+.socialmedia-widget li.github a:before { content: "\f09b"; }
+
 .socialmedia-widget li.facebook:hover a { color: #446ebf; }
 .socialmedia-widget li.twitter:hover a { color: #39aadc; }
 .socialmedia-widget li.tumblr:hover a { color: #4c6781; }
@@ -2266,6 +2269,9 @@ a.sr-button2:hover { border-color: #ffffff; color: #0d0d0d; }
 .socialmedia-widget li.instagram:hover a { color: #95604b; }
 .socialmedia-widget li.xing:hover a { color: #036567; }
 .socialmedia-widget li.dropbox:hover a { color: #008cd2; }
+
+.socialmedia-widget li.gitlab:hover a { color: #d63d1e; }
+.socialmedia-widget li.github:hover a { color: #008cd2; }
 
 
 
