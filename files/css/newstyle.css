@@ -60,5 +60,8 @@
     background-color: #14230e;
 }
 
+.header-inner {
+    background-color: var(--main-border-color);
+}
 
 
