@@ -49,9 +49,6 @@ jQuery(window).load(function($) {
 			setTimeout(function() { window.location = url; }, 300);
 		});
 		setTimeout(function() { jQuery("body").removeClass("loading-end"); }, 500);
-        jQuery("#page-loader").slideUp(800, 'easeInOutExpo', function() {
-			setTimeout(function() { window.location = url; }, 300);
-		});
 	}
 	
 	
