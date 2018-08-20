@@ -1823,7 +1823,7 @@ a.sr-button2:hover { border-color: #ffffff; color: #0d0d0d; }
 	width: 40px;
 	height: 1px;
 	line-height: 1px;
-	background: #ffffff;
+	background: black;
 	display: block;
 	}
 	.text-light .separator-small span, .overlay-dark .separator-small span { background: #ffffff; }
