@@ -48,6 +48,7 @@ jQuery(window).load(function($) {
 		jQuery("#page-loader").slideDown(800, 'easeInOutExpo', function() {
 			setTimeout(function() { window.location = url; }, 300);
 		});
+        jQuery('.header-inner').slideUp(800, 'easeInOutExpo');
 		setTimeout(function() { jQuery("body").removeClass("loading-end"); }, 500);
 	}
 	
