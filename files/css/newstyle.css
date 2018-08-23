@@ -56,6 +56,10 @@
     color: #0f0f0e;
 }
 
+.no-background {
+    background-color: transparent;
+}
+
 .separator-border {
     background-color: #14230e;
 }
@@ -77,5 +81,5 @@
 }
 
 .faded-picture {
-    box-shadow: 0 0 100px 100px #f7f7f7 inset;
+    box-shadow: 0 0 50px 50px #f7f7f7 inset;
 }
