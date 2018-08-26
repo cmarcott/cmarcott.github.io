@@ -29,7 +29,12 @@ jQuery(window).load(function($) {
 	});
 	
 	
-	
+	jQuery(window).bind("pageshow", function(event) {
+        if (event.originalEvent.persisted) {
+            window.location.reload() 
+        }
+    });
+    
 	/*---------------------------------------------- 
 			 T R A N S I T I O N   (when leaving the page)
 	------------------------------------------------*/
