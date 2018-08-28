@@ -16,7 +16,7 @@
     /*font-family: 'Anurati';*/
     /*font-size: 62px;*/
     color: #fdfdfd;
-    text-shadow: -1px 0 var(--title-text-border-color), 0 1px var(--title-text-border-color), 1px 0 var(--title-text-border-color), 0 -1px var(--title-text-border-color);
+    /*text-shadow: -1px 0 var(--title-text-border-color), 0 1px var(--title-text-border-color), 1px 0 var(--title-text-border-color), 0 -1px var(--title-text-border-color);*/
 }
 
 .title-bordered {
