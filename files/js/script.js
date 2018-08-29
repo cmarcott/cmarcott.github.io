@@ -163,7 +163,7 @@ jQuery(window).load(function($) {
 			hideResponsiveNav();
 		} else {
 			jQuery('.open-nav span').toggleClass('is-clicked'); 
-			jQuery('#main-nav').slideDown(700,'easeInOutExpo',function(){
+			jQuery('#main-nav').slideDown(500,'easeInOutExpo',function(){
 				jQuery('#main-nav').addClass("nav-visible");
 				var menuHeight = jQuery(".nav-inner").height();
 				jQuery(".nav-inner").css({'max-height':menuHeight+'px'});
@@ -172,7 +172,7 @@ jQuery(window).load(function($) {
 				} else {
 					var marginTop = 0;
 				}
-				jQuery(".nav-inner").animate({"marginTop": marginTop+'px', opacity: 1}, 700, 'easeInOutQuart');
+				jQuery(".nav-inner").animate({"marginTop": marginTop+'px', opacity: 1}, 500, 'easeInOutQuart');
 			});
 		}
 		return false;
