@@ -2425,7 +2425,7 @@ a.sr-button2:hover { border-color: #ffffff; color: #0d0d0d; }
 .bordered .sticky-header #logo, .bordered .sticky-header #logo img { height: 24px;  } 
 .bordered .sticky-header .header-inner { padding: 8px 0; }
 .bordered .sticky-header .open-nav { margin-top: 2px; }
-.bordered .sticky-header .open-nav span.is-clicked:before, .bordered .sticky-header .open-nav span.is-clicked:after { background-color: #0d0d0d; }
+.bordered .sticky-header .open-nav span.is-clicked:before, .bordered .sticky-header .open-nav span.is-clicked:after { background-color: #ffffff; }
 .bordered nav#main-nav { top: 40px; right: 40px; width: calc(100% - 80px); height: calc(100% - 80px); }
 .bordered .fixed-header-content #header-name { line-height: 24px; }
 

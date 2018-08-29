@@ -93,8 +93,9 @@
 						<div class="nav-inner">
 						<ul>
 						<li><a href="index.html" class="scroll-to" data-bigletter="H">Home</a></li>
-						<li><a href="projects.html" class="scroll-to" data-bigletter="P">Projects</a></li>
-						<li><a href="qualifications.html" class="scroll-to" data-bigletter="Q">Qualifications</a></li>
+                        <li><a href="#about" class="scroll-to" data-bigletter="A">About</a></li>
+						<li><a href="#proj-qualif-sp" onClick="document.getElementById('projects-li').click();" class="scroll-to" data-bigletter="P">Projects</a></li>
+						<li><a href="#proj-qualif-sp" onClick="document.getElementById('qualif-li').click();" class="scroll-to" data-bigletter="Q">Qualifications</a></li>
 						</ul>
 						</div>
 						<div class="nav-social">
@@ -118,8 +119,8 @@
 	<section id="page-title" class="full-height parallax-section text-light" data-parallax-image="files/images/cloudy-mountain-dark.jpeg">
 		<div style="background-color: transparent;" class="section-inner align-center">
 			<div><h2 class="title-minimal" id="main-title-screen"><strong>Chris Marcotte</strong></h2></div>
-            <div class="separator-small"><span style="background: white;" ></span></div>
-            <h4 class="title-minimal" style="color: #fdfdfd;">Computer Science</h4>
+            <hr width="75%">
+            <h4 class="title-minimal" style="color: #fdfdfd;">Computer Science Portfolio</h4>
                 <ul class="socialmedia-widget">
 					<li class="linkedin"><a href="https://www.linkedin.com/in/christophermarcotte/"></a></li>
                     <li class="gitlab"><a href="https://gitlab.christophermarcotte.com/myprojects"></a></li>
@@ -127,7 +128,7 @@
 				</ul>
             <div class="spacer spacer-medium" style="background-color: transparent;"></div>
             <div class="scrolldownDiv">
-                <a href="#about-split"> <img class="arrow" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png" /></a>
+                <a href="#main"> <img class="arrow" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png" /></a>
             </div>
             <!--a class="ct-btn-scroll ct-js-btn-scroll" href="#begin"><img alt="Arrow Down Icon" src="files/assets/scrolldownwhite5.png"></a-->
 			<!-- The h2 is wrapped into a div tag because by default it has a top margin. By placing it in the div it doesn't apply the top padding because it's the first child of its parent element -->
@@ -139,7 +140,7 @@
 	<!-- PAGEBODY -->
 	<div class="page-body">
     
-    <div id="about-split" class="split-section clearfix" style="background: #0f0f0e;">
+    <div id="main" class="split-section clearfix" style="background: #0f0f0e;">
 
         
             <div class="split-left split-half text-light">
@@ -147,14 +148,14 @@
                 <img class="align-center" src="files/images/menobackgroundgaussian.png" alt="Christopher Cutout">
             </div> <!-- END .split-right -->
 
-            <div class="split-left split-half text-light">
+            <div id="about" class="split-left split-half text-light">
                 <div class="split-mini-content">
                     <div class="align-center">
                         <h2 data-bigletter="A"><strong>About</strong></h2>
                     </div>
                     <div class="spacer spacer-small" style="background: transparent"></div>
                     <p>My name is Christopher Marcotte, and I am currently in the final year of my Computer Science degree at the University of Guelph in Ontario.</p>
-                    <p>Unsurprisingly, many of my hobbies include working with computers, usually on projects for my personal servers, however I also am an avid hiker and cyclist always looking for new areas to explore.</p>
+                    <p>Unsurprisingly, many of my hobbies include working with computers, often with my forever growing network of personal homelab servers, however I am also an avid hiker and cyclist always looking for new areas to travel to and explore.</p>
                 </div>
             </div> <!-- END .split-left -->
 
@@ -163,59 +164,323 @@
 		<section id="portfolio-layout" class="notoppadding">
        		<div id="main-sections" class="section-inner">		
 				
+
+                <div class="wrapper">
+                    <div id="proj-qualif-sp" class="spacer spacer-big"></div>
+                    
+                    <div id="proj-qualif" class="main-title align-center">
+                        <h2 data-bigletter="P&Q"><strong>Projects & Qualifications</strong></h2>
+                        <div class="separator"><span></span></div>
+                    </div>
+                    
+                    <!-- TABS -->
+                    <div class="tabs align">
+                            <ul id="main-tab-nav" class="tab-nav clearfix">
+                                <li><a id="projects-li" href="tabid1" class="active">Projects</a></li>
+                                <li><a id="qualif-li" href="tabid2" >Qualifications</a></li>
+                            </ul>
+                        <div class="spacer spacer-small"></div>
+                            <div class="clear"></div>   
+                            <div class="tab-container clearfix" style="display: flex; justify-content: center;">
+                                <div id="projects" class="tab-content tabid1 active">
+                                    <!-- PROJECTS -->
+                                    <div class="wrapper-small"> 
+
+                                        <div id="projects-description" class="main-title align-center">
+                                            <h5 class="alttitle title-minimal">Take a look at some of my past work</h5>
+                                        </div>
+
+                                        <div class="spacer spacer-medium"></div>
+
+                                        <!-- Project 1 -->
+                                        <div class="column-section clearfix">
+                                            <div class="column one-half imgoverlay overlay-dark overlay-transparent">
+                                                <img src="files/uploads/projects/space-blasters.png" alt="Space Blasters">
+                                                <a href="https://gitlab.christophermarcotte.com/cmarcotte/FinalSpaceBlasters" class="transition"></a>
+                                          </div> 
+                                          <div class="column one-half last-col">
+                                                <h4 class="title-minimal"><strong>Final Space Blasters</strong></h4>
+                                                <div class="separator-small"><span></span></div>
+                                                <h6 class="alttitle">iOS App</h6>
+                                                <p>iOS 2D Space Shooter game utilizing Spritekit framework and Swift. Blast your way through enemies while collecting as many rewards as possible.</p>
+                                                <ul class="socialmedia-widget">
+                                                    <li class="gitlab"><a href="https://gitlab.christophermarcotte.com/cmarcotte/FinalSpaceBlasters"></a></li>
+                                                    <li class="github"><a href="https://github.com/cmarcott/FinalSpaceBlasters"></a></li>
+                                                </ul>
+                                          </div>
+                                        </div> <!-- END .column-section -->
+                                        <!-- Project 1 -->
+
+                                        <div class="spacer spacer-small"></div>
+                                        <div class="separator align-center"><span></span></div>
+
+                                        <!-- Project 2 -->
+                                        <div class="column-section clearfix">
+                                          <div class="column one-half align-right">
+                                                <h4 class="title-minimal"><strong>Context Aware Budgeting</strong></h4>
+                                                <div class="separator-small"><span></span></div>
+                                                <h6 class="alttitle">Android App</h6>
+                                                <p>Designed during NCR Hackathon 2018. An Android application designed to scan in information using receipts, location, and financial transactions in order to provide customer specific deals.</p>
+                                                <ul class="socialmedia-widget">
+                                                    <li class="gitlab"><a href="https://gitlab.christophermarcotte.com/cmarcotte/ContextAwareBudgeting"></a></li>
+                                                </ul>
+                                          </div>
+                                            <div class="column one-half last-col imgoverlay overlay-dark overlay-transparent">
+                                                <img src="files/uploads/projects/context-aware.png" alt="Context Budgeting">
+                                                <a href="https://gitlab.christophermarcotte.com/cmarcotte/ContextAwareBudgeting" class="transition"></a>
+                                          </div> 
+                                        </div> <!-- END .column-section -->
+                                        <!-- Project 2 -->
+
+                                        <div class="spacer spacer-small"></div>
+                                        <div class="separator align-center"><span></span></div>
+
+                                        <!-- Project 3-->
+                                        <div class="column-section clearfix">
+                                            <div class="column one-half imgoverlay overlay-dark overlay-transparent">
+                                                <img src="files/uploads/projects/adherence.png" alt="Medication Tracker">
+                                                <a href="https://gitlab.christophermarcotte.com/cmarcotte/AndroidMedicationTracker" class="transition"></a>
+                                          </div> 
+                                          <div class="column one-half last-col">
+                                                <h4 class="title-minimal"><strong>Medication Adherence Tracker</strong></h4>
+                                                <div class="separator-small"><span></span></div>
+                                                <h6 class="alttitle">Android App</h6>
+                                                <p>Winter 2017 University project. Android Application specializing in medication and adherence tracking. Includes push notifications, Node.js backend support, and organization level administration over users.</p>
+                                                <ul class="socialmedia-widget">
+                                                    <li class="gitlab"><a href="https://gitlab.christophermarcotte.com/cmarcotte/AndroidMedicationTracker"></a></li>
+                                                </ul>
+                                          </div>
+                                        </div> <!-- END .column-section -->
+                                        <!-- Project 3 -->
+
+                                        <div class="spacer spacer-small"></div>
+                                        <div class="separator align-center"><span></span></div>
+
+                                        <!-- Project 4 -->
+                                        <div class="column-section clearfix">
+                                          <div class="column one-half align-right">
+                                                <h4 class="title-minimal"><strong>Posture+</strong></h4>
+                                                <div class="separator-small"><span></span></div>
+                                                <h6 class="alttitle">iOS App</h6>
+                                                <p>iOS application focused on helping user with posture. Planned integration with watchOS will allow users to actively and dynamically monitor and improve their posture.</p>
+                                                <ul class="socialmedia-widget">
+                                                    <li class="gitlab"><a href="https://gitlab.christophermarcotte.com/cmarcotte/PosturePlus"></a></li>
+                                                    <li class="github"><a href="https://github.com/cmarcott/PosturePlus"></a></li>
+                                                </ul>
+                                          </div>
+                                            <div class="column one-half last-col imgoverlay overlay-dark overlay-transparent">
+                                                <img src="files/assets/icons/ios-grey-project.png" alt="Posture+">
+                                                <a href="https://gitlab.christophermarcotte.com/cmarcotte/PosturePlus" class="transition"></a>
+                                          </div> 
+                                        </div> <!-- END .column-section -->
+                                        <!-- Project 4 -->
+
+                                        <div class="spacer spacer-small"></div>
+                                        <div class="separator align-center"><span></span></div>
+
+                                        <!-- Project 5-->
+                                        <div class="column-section clearfix">
+                                            <div class="column one-half imgoverlay overlay-dark overlay-transparent">
+                                                <img src="files/uploads/projects/TCP.png" alt="TCP File Transfer">
+                                                <a href="https://gitlab.christophermarcotte.com/cmarcotte/Threaded-TCP-File-Transfer-Client-Server" class="transition"></a>
+                                          </div> 
+                                          <div class="column one-half last-col">
+                                                <h4 class="title-minimal"><strong>Threaded TCP File Transfer Client/Server</strong></h4>
+                                                <div class="separator-small"><span></span></div>
+                                                <h6 class="alttitle">C Program</h6>
+                                                <p>A client/server combination allowing users to transfer text files from multiple clients to a central server. Allows adjustable buffer size and port allocation.</p>
+                                                <ul class="socialmedia-widget">
+                                                    <li class="gitlab"><a href="https://gitlab.christophermarcotte.com/cmarcotte/Threaded-TCP-File-Transfer-Client-Server"></a></li>
+                                                    <li class="github"><a href="https://github.com/cmarcott/Threaded-TCP-File-Transfer-Client-Server"></a></li>
+                                                </ul>
+                                          </div>
+                                        </div> <!-- END .column-section -->
+                                        <!-- Project 5 -->
+
+                                        <div class="spacer spacer-small"></div>
+                                        <div class="separator align-center"><span></span></div>
+
+                                        <!-- Project 6 -->
+                                        <div class="column-section clearfix">
+                                          <div class="column one-half align-right">
+                                                <h4 class="title-minimal"><strong>Simplified C++ Converter</strong></h4>
+                                                <div class="separator-small"><span></span></div>
+                                                <h6 class="alttitle">C Program</h6>
+                                                <p>2016 University Project. A program which converts a simplified version of C++ into C..</p>
+                                                <ul class="socialmedia-widget">
+                                                    <li class="gitlab"><a href="https://gitlab.christophermarcotte.com/cmarcotte/Simplified-C-Converter"></a></li>
+                                                    <li class="github"><a href="https://github.com/cmarcott/Simplified-C-Converter"></a></li>
+                                                </ul>
+                                          </div>
+                                            <div class="column one-half last-col imgoverlay overlay-dark overlay-transparent">
+                                                <img src="files/assets/icons/c-project.png" alt="Converter">
+                                                <a href="https://gitlab.christophermarcotte.com/cmarcotte/Simplified-C-Converter" class="transition"></a>
+                                          </div> 
+                                        </div> <!-- END .column-section -->
+                                        <!-- Project 6 -->
+
+                                        <div class="spacer spacer-small"></div>
+                                        <div class="separator align-center"><span></span></div>
+
+                                        <!-- Project 7-->
+                                        <div class="column-section clearfix">
+                                            <div class="column one-half imgoverlay overlay-dark overlay-transparent">
+                                                <img src="files/assets/icons/c-project.png" alt="Message Board">
+                                                <a href="https://gitlab.christophermarcotte.com/cmarcotte/Hosted-Message-Board" class="transition"></a>
+                                          </div> 
+                                          <div class="column one-half last-col">
+                                                <h4 class="title-minimal"><strong>Hosted Message Board</strong></h4>
+                                                <div class="separator-small"><span></span></div>
+                                                <h6 class="alttitle">C/Python/PHP Application</h6>
+                                                <p> 2016 University Project. Program which allows users to join and post to different messaging board depending on their interests.</p>
+                                                <ul class="socialmedia-widget">
+                                                    <li class="gitlab"><a href="https://gitlab.christophermarcotte.com/cmarcotte/Hosted-Message-Board"></a></li>
+                                                    <li class="github"><a href="https://github.com/cmarcott/Hosted-Messaging-Board"></a></li>
+                                                </ul>
+                                          </div>
+                                        </div> <!-- END .column-section -->
+                                        <!-- Project 7 -->
+
+                                    </div> <!-- END .wrapper-small -->		
+                                    <!-- PROJECTS -->
+
+                                    <div class="spacer spacer-medium"></div>
+
+                                    <!-- SERVICES -->
+                                    <div class="horizontalsection">
+                                        <div class="horizontalinner wrapper-small">
+
+                                            <div class="main-title align-center">
+                                                <h4 class="title-minimal" data-bigletter="H"><strong>Honourable Mentions</strong></h4>
+                                                <div class="separator-small"><span></span></div>
+                                            </div>
+
+                                            <div class="column-section clearfix">
+                                                <div class="column one-half align-center">
+                                                    <i class="pe-7s-browser pe-3x"></i>
+                                                    <h6 class="title-minimal" data-bigletter="P"><strong>Personal Website</strong></h6>
+                                                    <p>Ongoing project of mine that you are currently browsing through. Created mainly using HTML/CSS/JavaScript/JQuery</p>
+                                                </div>
+                                                <div class="column one-half last-col align-center">
+                                                    <i class="pe-7s-gleam pe-3x"></i>
+                                                    <h6 class="title-minimal" data-bigletter="H"><strong>Home Lab</strong></h6>
+                                                    <p>A personal enterprise level emulator of servers and technologies used to host multiple development tools for my own personal use, such as my Gitlab, PLEX, OpenVPN, and Sonarr servers configured across several VLANs behind a pfSense firewall</p>
+                                                </div>
+                                            </div> <!-- END .column-section -->
+                                        </div> <!-- END .horizontalinner.wrapper -->
+                                    </div> <!-- END .horizontalsection -->
+                                    <!-- HONORABLE MENTIONS -->
+                                </div>
+
+                                <div class="tab-content tabid2 active">
+
+                                    <div class="main-title align-center">
+                                        <h5 class="alttitle title-minimal">Professional Job Experience and Skills</h5>
+                                    </div>
+
+                                    <div class="spacer spacer-big"></div>
+
+                                    <div class="wrapper">
+                                        <div class="column-section clearfix">
+                                            <div class="column one-half">
+                                                <!-- ACCORDION -->
+                                                <div class="accordion">
+                                                    <div class="toggle-item">
+                                                        <div class="toggle-title toggle-active">
+                                                            <h5 class="title-minimal alttitle toggle-name"><strong>Software Developer</strong></h5>
+                                                            <br><h7><i>NCR Corporation, Waterloo</i></h7>
+                                                        </div>
+                                                        <div class="toggle-inner">
+                                                            <p>At NCR I worked primarily as a back-end developer creating API's for bank transaction software. Much of my work involved working in <strong>Java</strong> on our stack of microservices which were deployed to a <strong>Docker/Kubernetes</strong> environment.</p>
+                                                            <p>A typical day for me consisted of writing new features for our microservices, creating unit and integration tests for these features using <strong>JUnit</strong> and <strong>Cucumber/Gherkin</strong>, and ensuring these features would properly be built into Docker images and deploy to our Kubernetes cluster utilizing our <strong>Jenkins</strong> automated build server software within our <strong>continuous integration (CI)</strong> environment.</p>
+                                                            <p>Additional duties would include maintaining Kubernetes clusters and debugging issues at a sysadmin level within development environments or developing our <strong>AngularJS</strong> POC application in order to showcase new features. All this would be done whilst attending standard <strong>agile development</strong> meetings such as daily standup or sprint planning.</p>
+                                                            <div class="spacer spacer-mini"></div>
+                                                            <div class="separator align-center"><span></span></div>
+                                                            <div class="spacer spacer-mini"></div>
+                                                        </div>
+                                                    </div>
+                                                <div class="toggle-item">
+                                                        <div class="toggle-title">
+                                                            <h5 class="title-minimal alttitle toggle-name"><strong>IT Developer</strong></h5>
+                                                            <br><h7><i>Risolv IT Solutions, Guelph</i></h7>
+                                                        </div>
+                                                        <div class="toggle-inner">
+                                                            <p>At Risolv I worked as co-lead of a small team of developers to design, create, and implement a new <strong>full-stack</strong> company-wide web application which integrated a time-tracking program with an internal ticketing system.</p>
+                                                            <p>Projects here consisted of using mainly <strong>PHP, JavaScript, HTML, CSS, Powershell, SQL</strong> and required the use of both REST and SOAP based APIs to interact with existing systems.</p>
+                                                            <p>Additional duties here included developing Powershell and Python scripts to automate tedious and recurring manual tasks.</p>
+                                                            <div class="spacer spacer-mini"></div>
+                                                            <div class="separator align-center"><span></span></div>
+                                                            <div class="spacer spacer-mini"></div>
+                                                        </div>
+                                                     </div>
+                                                <div class="toggle-item">
+                                                    <div class="toggle-title">
+                                                        <h5 class="title-minimal alttitle toggle-name"><strong>IT Support Specialist</strong></h5>
+                                                        <br><h7><i>McKellar Structured Settlements, Guelph</i></h7>
+                                                    </div>
+                                                    <div class="toggle-inner"><p>While working at McKellar I learned extensive enterprise level <strong>networking knowledge</strong> in order to maintain and upgrade the entirety of the company wide infrastructure.</p><p>Some of my daily tasks included assisting in the <strong>web development process</strong> of the new and improved company website, or dealing with threats such as <strong>ransomware</strong> within the internal network.</p></div>
+                                                </div>               
+                                                </div>
+                                                <!-- ACCORDION --> 
+                                            </div>
+                                            <div class="column one-half last-col">
+                                                <h5 class="title-minimal"><strong>Top Skills</strong></h5>
+                                                <div class="skill">
+                                                    <h6 class="alttitle skill-name"><strong>C</strong></h6>
+                                                    <div class="skill-bar"><div class="skill-active" style="" data-perc="96">
+                                                    <span class="tooltip">96%</span></div></div>
+                                                </div> 
+                                                <div class="skill">
+                                                    <h6 class="alttitle skill-name"><strong>Java</strong></h6>
+                                                    <div class="skill-bar"><div class="skill-active" style="" data-perc="92">
+                                                    <span class="tooltip">92%</span></div></div>
+                                                </div>
+                                                <div class="skill">
+                                                    <h6 class="alttitle skill-name"><strong>Docker</strong></h6>
+                                                    <div class="skill-bar"><div class="skill-active" style="" data-perc="86">
+                                                    <span class="tooltip">86%</span></div></div>
+                                                </div>  
+                                                <div class="skill">
+                                                    <h6 class="alttitle skill-name"><strong>PHP</strong></h6>
+                                                    <div class="skill-bar"><div class="skill-active" style="" data-perc="72">
+                                                    <span class="tooltip">72%</span></div></div>
+                                                </div>  
+                                                <div class="skill">
+                                                    <h6 class="alttitle skill-name"><strong>Python</strong></h6>
+                                                    <div class="skill-bar"><div class="skill-active" style="" data-perc="71">
+                                                    <span class="tooltip">71%</span></div></div>
+                                                </div>  
+                                                <div class="skill">
+                                                    <h6 class="alttitle skill-name"><strong>JavaScript</strong></h6>
+                                                    <div class="skill-bar"><div class="skill-active" style="" data-perc="83">
+                                                    <span class="tooltip">83%</span></div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="spacer spacer-medium"></div>
+                                        <div class="separator align-center"><span></span></div>
+                                        <div class="spacer spacer-medium"></div>
+                                         <div class="horizontalsection  parallax-section faded-picture" data-parallax-image="files/images/tech-montage-condensed.png" data-speed="0.5">
+                                        <div class="horizontalinner wrapper align-center">
+                                            <div class="spacer spacer-mini no-background"></div>
+                                            <div class="spacer spacer-mini no-background"></div>
+                                            <div class="spacer spacer-big no-background"></div>
+                                        </div>
+                                    </div> <!-- END .horizontalsection-->
+                                    </div>
+                                </div>
+
+                                </div>       
+                            </div>  <!-- END .tabs --> 
+                            <!-- TABS -->
+
+                    <div class="spacer spacer-medium"></div>
+                <div class="separator align-center"><span></span></div>
+                <div class="spacer spacer-medium"></div>
+
+                </div> <!-- END .section-inner-->
                 
-				<!-- SPACED PORTFOLIO -->
-                <div id="begin" class="spacer spacer-big"></div>
-				<div class="main-title wrapper align-center">
-					<h2 class="page-text" data-bigletter="M"><strong>Main Pages</strong></h2>
-					<div class="separator-small"><span></span></div>
-					<h6 class="alttitle title-minimal"></h6>
-					<div class="spacer spacer-small"></div>
-				</div> <!-- END .main-title .wrapper -->
-				
-				<div class="spacer spacer-small"></div>
-				
-				<!-- PROJECT BOXES -->
-				<div class="wrapper">
-			
-					<div class="column-section clearfix">
-					  <div class="column one-half">
-							<div class="imgoverlay overlay-dark overlay-transparent">
-								<img src="files/assets/gitlab-logo.png" alt="SEO IMAGE NAME">
-								<div class="overlaycaption">
-									<h4 class="overlay-name title-minimal"><strong>Projects</strong></h4>
-									<div class="separator-small"><span></span></div>
-									<h6 class="alttitle">Take a look at some of my past projects</h6>
-								</div>
-                                <a href="projects.html" class="transition"></a>
-							</div>
-							<h6>My Projects</h6>
-							<p class="page-text">
-							View some of my past work and projects by visiting my private Gitlab server. 
-						</p>
-					  </div>
-					  <div class="column one-half last-col">
-							<div class="imgoverlay overlay-dark overlay-transparent">
-								<img src="files/assets/clipboard-darker.jpg" alt="SEO IMAGE NAME">
-								<div class="overlaycaption">
-									<h4 class="overlay-name title-minimal"><strong>Qualifications</strong></h4>
-									<div class="separator-small"><span></span></div>
-									<h6 class="alttitle">My past experience and resume</h6>
-								</div>
-                                <a href="qualifications.html" class="transition"></a>
-							</div>
-							<h6>Qualifications</h6>
-							<p class="page-text">
-							More detailed information about my past professional experience.  
-						</p>
-					  </div>    
-					</div> <!-- END .column-section -->
-					
-				</div><!-- END .wrapper -->
-				<!-- PROJECT BOXES -->
-				 
-                
-				<div class="spacer spacer-big"></div>
+                <div class="spacer spacer-big"></div>
 				
 				
            </div> <!-- END .section-inner-->
