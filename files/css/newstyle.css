@@ -175,8 +175,3 @@ figure {
     position: absolute;
     width: 50px;
 }
-
-#main-tab-nav {
-    display: flex; 
-    justify-content: center;
-}
