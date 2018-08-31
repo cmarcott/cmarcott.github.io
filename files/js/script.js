@@ -1,6 +1,6 @@
 /*-----------------------------------------------------------------------------------
 
- 	Script - All Custom frontend jQuery scripts & functions
+ 	Script 
  
 -----------------------------------------------------------------------------------*/
 setTimeout(function() { jQuery("body").addClass("loading"); },200); // Start loading animation
