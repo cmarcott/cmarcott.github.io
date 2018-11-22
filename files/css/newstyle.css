@@ -1,10 +1,11 @@
 :root {
     --transition-and-dropdown-color: #0f0f0e;
     --general-page-background: #f7f7f7;
-    --main-border-color: #14230e;
+    --main-border-color: #142a0e;
     --standard-border-text-color: #f7f7f7;
-    --title-text-border-color: #14230e;
+    --title-text-border-color: #142a0e;
     --text-border-color: #0f0f0e;
+    --secondary-page-background: #d3d3d3;
 }
 
 @font-face {
@@ -192,8 +193,62 @@ figure {
     display:inline-block;
     margin:7px;
     padding:5px 10px;
-    background:#e4eae4;
-    color:#1d212b;
+    background:var(--main-border-color);
+    color:var(--standard-border-text-color);
     list-style:none;
     cursor:default;
+}
+
+.aboutmedark {
+    background-color: var(--secondary-page-background);
+}
+
+.boxborderedtop {
+    border-top: 1px solid grey;
+}
+
+.boxborderedbottom {
+    border-bottom: 1px solid grey;
+}
+
+.color-bold-emphasis {
+    color: var(--main-border-color);
+}
+
+#contact-form{
+    max-width:500px;
+    margin:0 auto
+}
+
+#contact-form input,#contact-form textarea{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: solid;
+    border-color: var(--main-border-color);
+    margin-bottom: 10px;
+    background: transparent;
+    color: var(---main-border-color);
+    transition:.5s ease all
+}
+
+#contact-form input::-webkit-input-placeholder,#contact-form textarea::-webkit-input-placeholder{
+    color:var(--main-border-color);
+}
+
+#contact-form textarea{
+    height:110px;
+    resize:none
+}
+
+#contact-form button{
+    background:#cbceca;
+    border-radius:4px;
+    padding:5px 10px;
+    border:none;
+    color: #000;
+    font-weight:700;
+    box-shadow:0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);
+    transition:.5s ease all
 }
