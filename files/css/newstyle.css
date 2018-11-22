@@ -199,7 +199,7 @@ figure {
     cursor:default;
 }
 
-.aboutmedark {
+.secondary-background {
     background-color: var(--secondary-page-background);
 }
 
