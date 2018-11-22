@@ -175,3 +175,25 @@ figure {
     position: absolute;
     width: 50px;
 }
+
+#skills{
+    padding:50px 15px;
+    text-align:center
+}
+
+#skills ul{
+    display:block;
+    margin:0 auto;
+    padding:0;
+    max-width:800px
+}
+
+#skills li{
+    display:inline-block;
+    margin:7px;
+    padding:5px 10px;
+    background:#e4eae4;
+    color:#1d212b;
+    list-style:none;
+    cursor:default;
+}
