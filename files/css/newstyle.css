@@ -53,6 +53,10 @@
     background-color: var(--general-page-background);
 }
 
+.primary-background {
+    background-color: var(--general-page-background);
+}
+
 .page-text {
     color: #0f0f0e;
 }
