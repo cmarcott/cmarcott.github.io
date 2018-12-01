@@ -41,7 +41,7 @@ jQuery(window).load(function($) {
 	jQuery(window).unload(function() { });		// work-around for browser back button
 	jQuery('.transition').click(function(e) {
 		href = jQuery(this).attr('href');
-		if (href.charAt(0) !== '#') {
+		if (href.charAt(0) !== '#' && this.target !== '_blank') {
 			smoothtransistion(href);
 			return false;
 		} else {
