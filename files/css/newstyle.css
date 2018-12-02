@@ -277,7 +277,7 @@ figure {
 
 #servers-list li{
     margin:7px;
-    padding:5px 50px;
+    padding:5px 0px;
     background:transparent;
     color:black;
     list-style:none;
