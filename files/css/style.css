@@ -2388,7 +2388,7 @@ a.sr-button2:hover { border-color: #ffffff; color: #0d0d0d; }
 	}
 	
 .bordered #bodyborder-left, .bordered #bodyborder-right {
-	/*top: 0; bottom: 0;*/
+	top: 0; bottom: 0;
 	width: 40px;
 	}
 	.bordered #bodyborder-left { left: -40px; }
