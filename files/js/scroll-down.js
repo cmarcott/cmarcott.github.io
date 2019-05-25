@@ -1,6 +1,7 @@
 jQuery(document).ready(function(){
   jQuery("a").on('click', function(event) {
-    if (this.hash !== "") {
+      /* This has been modified to only work if classname of 'scrolldown' is included */
+    if (this.hash !== "" && this.hash.className.includes("scrolldown")) {
       event.preventDefault();
       var hash = this.hash;
       jQuery('html, body').animate({
