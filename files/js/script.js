@@ -25,7 +25,7 @@ jQuery(window).load(function($) {
 				jQuery('html,body').animate({ scrollTop: jQuery( "#"+openSection ).offset().top-jQuery("header").height()+80}, 10, 'easeInOutExpo'); 
 			}	
 		});
-		jQuery("#page-loader").delay(1100).animate({top:borderWidthHeight+'px',height:jQuery(window).height()-(borderWidthHeight*2)+'px'},10).slideUp(900, 'easeInOutExpo',function(){ jQuery("#page-loader").animate({top:'0',height:'100%'},10) });
+		jQuery("#page-loader").delay(1300).animate({top:borderWidthHeight+'px',height:jQuery(window).height()-(borderWidthHeight*2)+'px'},10).slideUp(700, 'easeInOutExpo',function(){ jQuery("#page-loader").animate({top:'0',height:'100%'},10) });
 	});
 	
 	
