@@ -2416,7 +2416,7 @@ a.sr-button2:hover { border-color: #ffffff; color: #0d0d0d; }
 		
 		
 /* All elements change when border is active */
-.bordered #page-content { padding: 40px; }
+.bordered #page-content { padding: 40px; background: var(--main-border-color); }
 .bordered header { width: calc(100% - 80px); top: 40px; left: 40px; }
 .bordered .non-overlay { top: inherit; left: inherit; width: 100%; }
 .bordered .header-inner { padding: 40px 40px; }
