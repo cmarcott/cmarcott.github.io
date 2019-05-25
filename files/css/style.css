@@ -47,7 +47,6 @@ html {
 	-webkit-text-size-adjust: 100%; /* Prevent iOS text size adjust on orientation change without disabling user zoom */
 	-ms-text-size-adjust: 100%;
 	position: relative;
-    -webkit-overflow-scrolling: auto;
 	}
 
 body {
@@ -61,7 +60,6 @@ body {
 	position: relative;
 	background: #ffffff;
 	height: 100%;
-    -webkit-overflow-scrolling: auto;
 	}
 ::selection { background:#0d0d0d; color:#ffffff; }
 ::-moz-selection { background:#0d0d0d; color:#ffffff; }
@@ -2390,7 +2388,7 @@ a.sr-button2:hover { border-color: #ffffff; color: #0d0d0d; }
 	}
 	
 .bordered #bodyborder-left, .bordered #bodyborder-right {
-	top: 0; bottom: 0;
+	/*top: 0; bottom: 0;*/
 	width: 40px;
 	}
 	.bordered #bodyborder-left { left: -40px; }
