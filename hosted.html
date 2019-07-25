@@ -41,6 +41,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="files/js/scroll-down.js"></script>
+<script src="//code.jquery.com/jquery-1.12.4.js"></script>
+<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     
 </head>
 
@@ -194,7 +196,7 @@
 											<div class="separator-small"><span></span></div>
 											<h6 class="alttitle">Gaming</h6>
 										</div>
-										<a class="scrolldown" href="#currentlyrunning" class="transition"></a>
+										<a id="currentlyrunningicon" class="scrolldown" href="#currentlyrunning" class="transition"></a>
 									</div>
 							   </div>
 							</div> <!-- END .portfolio-masonry-entry -->
@@ -208,20 +210,36 @@
 											<div class="separator-small"><span></span></div>
 											<h6 class="alttitle">Files</h6>
 										</div>
-										<a target="_blank" href="https://nextcloud.holbrook.pro" class="transition"></a>
+										<a id="nextcloudnotice" class="scrolldown" href="#notices" class="transition"></a>
 									</div>
 							   </div>
 							</div> <!-- END .portfolio-masonry-entry -->
 
                     </div> <!-- END #portfolio-grid -->	
                         </div>
-                    <div class="spacer spacer-big"></div> 
 
                     </div> <!-- END .section-inner-->
                 </section> <!-- END SECTION #portfolio-->
-			   
-				<div class="spacer spacer-big"></div>
 				
+                <script>
+                jQuery( "#nextcloudnotice" ).click(function() {
+                  jQuery( "#notices" ).effect( "shake" );
+                });
+                jQuery( "#currentlyrunningicon" ).click(function() {
+                  jQuery( "#currentlyrunning" ).effect( "shake" );
+                });
+                </script>
+                
+                <div id="notices" class="section-inner">
+                    <div class="wrapper-small">
+                        <ul id="notice-list">
+                            <li><b>*NOTICE: Nextcloud server is currently down for maintenance. Apologies for any inconvenience.</b></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="spacer spacer-big"></div>
+                
                 <div id="currentlyrunning" class="section-inner">
                     <div class="main-title align-center wrapper">
                         <h4 data-bigletter="C"><strong>Current Game Servers</strong></h4>

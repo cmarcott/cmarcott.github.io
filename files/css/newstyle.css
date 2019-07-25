@@ -284,6 +284,28 @@ figure {
     cursor:default;
 }
 
+#notice-list{
+    padding:30px 15px;
+    text-align:center;
+}
+
+#notice-list ul{
+    display:block;
+    margin:0 auto;
+    padding:0;
+    max-width:800px;
+    
+}
+
+#notice-list li{
+    margin:7px;
+    padding:5px 0px;
+    background:transparent;
+    color:red;
+    list-style:none;
+    cursor:default;
+}
+
 .secondary-border-bottom {
     border-style: solid;
     border-width: 1px;
