@@ -283,3 +283,12 @@ figure {
     list-style:none;
     cursor:default;
 }
+
+.secondary-border-bottom {
+    border-style: solid;
+    border-width: 2px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-color: var(--main-border-color);
+}
