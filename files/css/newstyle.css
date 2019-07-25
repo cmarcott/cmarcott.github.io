@@ -233,7 +233,7 @@ figure {
     border-color: var(--main-border-color);
     margin-bottom: 10px;
     background: transparent;
-    color: var(---main-border-color);
+    color: var(--main-border-color);
     transition:.5s ease all
 }
 
@@ -286,7 +286,7 @@ figure {
 
 .secondary-border-bottom {
     border-style: solid;
-    border-width: 2px;
+    border-width: 1px;
     border-top: none;
     border-right: none;
     border-left: none;
