@@ -1,0 +1,316 @@
+:root {
+    --transition-and-dropdown-color: #0f0f0e;
+    --general-page-background: #f7f7f7;
+    --main-border-color: #142a0e;
+    --standard-border-text-color: #f7f7f7;
+    --title-text-border-color: #142a0e;
+    --text-border-color: #0f0f0e;
+    --secondary-page-background: #d3d3d3;
+}
+
+@font-face {
+    font-family: 'Anurati';
+    src: url("../resources/Anurati-Regular.otf") format("opentype");
+}
+
+#main-title-screen {
+    /*font-family: 'Anurati';*/
+    /*font-size: 62px;*/
+    color: #fdfdfd;
+    /*text-shadow: -1px 0 var(--title-text-border-color), 0 1px var(--title-text-border-color), 1px 0 var(--title-text-border-color), 0 -1px var(--title-text-border-color);*/
+}
+
+.title-bordered {
+    text-shadow: -1px 0 var(--text-border-color), 0 1px var(--text-border-color), 1px 0 var(--text-border-color), 0 -1px var(--text-border-color);
+}
+
+/* used for transparent background around text */
+.title-background {
+    text-align: center;
+}
+
+.title-background span {
+    background:rgba(0,0,0,0.3);
+}
+
+.centered-paragraph {
+    text-align: center;
+}
+
+.spacer {
+    background-color: var(--general-page-background);
+}
+
+.main-title {
+    background-color: var(--general-page-background);
+}
+
+.section-inner {
+    background-color: var(--general-page-background);
+}
+
+#main-sections {
+    background-color: var(--general-page-background);
+}
+
+.primary-background {
+    background-color: var(--general-page-background);
+}
+
+.page-text {
+    color: #0f0f0e;
+}
+
+.no-background {
+    background-color: transparent;
+}
+
+.separator-border {
+    background-color: #14230e;
+}
+
+.header-inner {
+    background-color: var(--main-border-color);
+}
+
+.embed-responsive {
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#pdfcontainer {
+
+}
+
+.faded-picture {
+    box-shadow: 0 0 50px 50px #f7f7f7 inset;
+}
+
+.separator-type, .title-type, .intro-type, .content-type .intro-type p {
+  position: relative;
+}
+
+.intro-type .container {
+  padding: 107px 0px 102px 0px !important;
+}
+
+.company-heading h1 {
+  margin-bottom: 60px;
+  padding-bottom: 50px;
+  line-height: 80px;
+  color: #fff;
+  font-weight: 700 !important;
+  text-align: center;
+}
+
+.jumbo {
+  margin-top: 50px;
+}
+
+.seo-header, .product-header, 
+.intro-type .container h1.white, 
+.company-heading h1 {
+  font-weight: 100 !important;
+  text-transform: capitalize;
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+
+.parallax {
+  background-attachment: inherit !important;
+}
+
+.parallax {
+  background-attachment: inherit !important;
+}
+
+.parallax {
+  background-attachment: inherit !important;
+  background-repeat: repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+  z-index: -10;
+}
+
+.ct-btn-scroll {
+  width: 49px;
+  height: 49px;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding-top: 500px;
+  z-index: 9;
+  border-radius: 50%;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+}
+
+img, 
+figure {
+  max-width: 100%;
+}
+
+.scrolldownDivbackup {
+    background-color: transparent;
+    height: 200px;
+    width: 200px;
+}
+
+@keyframes bouncing {
+    0% {bottom: 0;}
+    50% {bottom: 10px;}
+    100% {bottom: 0;}
+}
+
+.arrow {
+    animation: bouncing 1s infinite ease-in-out;
+    bottom: 0;
+    display: block;
+    height: 50px;
+    left: 50%;
+    margin-left: -25px;
+    position: absolute;
+    width: 50px;
+}
+
+#skills{
+    padding:50px 15px;
+    text-align:center
+}
+
+#skills ul{
+    display:block;
+    margin:0 auto;
+    padding:0;
+    max-width:800px
+}
+
+#skills li{
+    display:inline-block;
+    margin:7px;
+    padding:5px 10px;
+    background:var(--main-border-color);
+    color:var(--standard-border-text-color);
+    list-style:none;
+    cursor:default;
+}
+
+.secondary-background {
+    background-color: var(--secondary-page-background);
+}
+
+.boxborderedtop {
+    border-top: 1px solid grey;
+}
+
+.boxborderedbottom {
+    border-bottom: 1px solid grey;
+}
+
+.color-bold-emphasis {
+    color: var(--main-border-color);
+}
+
+#contact-form{
+    max-width:500px;
+    margin:0 auto
+}
+
+#contact-form input,#contact-form textarea{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: solid;
+    border-color: var(--main-border-color);
+    margin-bottom: 10px;
+    background: transparent;
+    color: var(--main-border-color);
+    transition:.5s ease all
+}
+
+#contact-form input::-webkit-input-placeholder,#contact-form textarea::-webkit-input-placeholder{
+    color:var(--main-border-color);
+}
+
+#contact-form textarea{
+    height:110px;
+    resize:none
+}
+
+#contact-form button{
+    background:#cbceca;
+    border-radius:4px;
+    padding:5px 10px;
+    border:none;
+    color: #000;
+    font-weight:700;
+    box-shadow:0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);
+    transition:.5s ease all
+}
+
+/*.borderedtext {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}*/
+
+#servers-list{
+    padding:30px 15px;
+    text-align:center;
+    border: 5px solid black;
+}
+
+#servers-list ul{
+    display:block;
+    margin:0 auto;
+    padding:0;
+    max-width:800px;
+    
+}
+
+#servers-list li{
+    margin:7px;
+    padding:5px 0px;
+    background:transparent;
+    color:black;
+    list-style:none;
+    cursor:default;
+}
+
+#notice-list{
+    padding:30px 15px;
+    text-align:center;
+}
+
+#notice-list ul{
+    display:block;
+    margin:0 auto;
+    padding:0;
+    max-width:800px;
+    
+}
+
+#notice-list li{
+    margin:7px;
+    padding:5px 0px;
+    background:transparent;
+    color:red;
+    list-style:none;
+    cursor:default;
+}
+
+.secondary-border-bottom {
+    border-style: solid;
+    border-width: 1px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-color: var(--main-border-color);
+}
